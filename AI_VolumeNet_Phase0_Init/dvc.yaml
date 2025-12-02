@@ -1,0 +1,6 @@
+
+stages:
+  prepare:
+    cmd: echo "prepare stage placeholder"
+    outs:
+      - data/raw

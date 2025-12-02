@@ -1,0 +1,4 @@
+
+tracking:
+  uri: http://localhost:5000
+  artifact_root: ./mlruns
