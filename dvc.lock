@@ -1,0 +1,10 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python scripts/prepare_data.py
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 5e991174bcfd46383330bcfde2c6a27a.dir
+      size: 44
+      nfiles: 1
