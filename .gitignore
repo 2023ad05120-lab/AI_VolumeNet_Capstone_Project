@@ -9,3 +9,6 @@ data/
 .idea/
 *.log
 .pytest_cache/
+synthetic_dataset/
+synthetic_dataset.zip
+.ipynb_checkpoints/
