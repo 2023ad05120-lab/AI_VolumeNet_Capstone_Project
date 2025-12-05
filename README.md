@@ -1,7 +1,10 @@
 <<<<<<< HEAD
-git clone https://github.com/2023ad05120-lab/AI_VolumeNet_Capstone_Project.git
+<<<<<<< HEAD
+git clone https://github.com/2023ad05120-lab/
 cd AI_VolumeNet_Capstone_Project
 =======
+=======
+>>>>>>> origin/main
 
 # AIVolumeNet: Phase 0 Repo Initialization
 
@@ -27,5 +30,8 @@ repository locally and prepare DVC/MLflow integration.
 3. Run the setup script: `./setup_project.sh`
 4. Follow printed instructions for DVC remote configuration and MLflow setup.
 
+<<<<<<< HEAD
 >>>>>>> 534423e (Phase 0 Week 1: Initial project setup with DVC, MLflow, env and structure)
 
+=======
+>>>>>>> origin/main
