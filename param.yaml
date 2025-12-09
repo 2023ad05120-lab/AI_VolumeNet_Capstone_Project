@@ -1,0 +1,16 @@
+dataset:
+  seed: 42
+  classes: ["cup", "bottle", "bowl", "plate"]
+  image_size: [640, 640]
+
+splits:
+  train: 0.7
+  val: 0.2
+  test: 0.1
+
+merge:
+  weights:
+    coco: 0.4
+    openimages: 0.3
+    rgbd: 0.2
+    generated_coco: 0.1
