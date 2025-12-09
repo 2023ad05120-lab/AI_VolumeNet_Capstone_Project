@@ -1,0 +1,8 @@
+stages:
+  generate_synthetic_coco:
+    cmd: python scripts/generate_synthetic_dataset_coco.py --out data/raw/generated_coco --seed ${dataset.seed}
+    deps:
+      - scripts/generate_synthetic_dataset_coco.py
+      - params.yaml
+    outs:
+      - data/raw/generated_coco
