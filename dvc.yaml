@@ -1,0 +1,128 @@
+stages:
+  # 1. Acquire datasets
+  acquire_coco:
+    cmd: python scripts/acquire_coco.py --out data/raw/coco
+    deps:
+      - scripts/acquire_coco.py
+    outs:
+      - data/raw/coco
+
+  acquire_openimages:
+    cmd: python scripts/acquire_openimages.py --out data/raw/openimages
+    deps:
+      - scripts/acquire_openimages.py
+    outs:
+      - data/raw/openimages
+
+  acquire_rgbd:
+    cmd: python scripts/acquire_rgbd.py --out data/raw/rgbd_synthetic
+    deps:
+      - scripts/acquire_rgbd.py
+    outs:
+      - data/raw/rgbd_synthetic
+
+  # 2. Generate synthetic dataset (your script)
+  generate_synthetic_coco:
+    cmd: python scripts/generate_synthetic_dataset_coco.py --out data/raw/generated_coco --seed ${dataset.seed}
+    deps:
+      - scripts/generate_synthetic_dataset_coco.py
+      - params.yaml
+    outs:
+      - data/raw/generated_coco
+
+  # 3. Preprocess each dataset into COCO schema
+  preprocess_coco:
+    cmd: python scripts/preprocess_coco.py --in data/raw/coco --out data/processed/coco
+    deps:
+      - scripts/preprocess_coco.py
+      - data/raw/coco
+    outs:
+      - data/processed/coco
+
+  preprocess_openimages:
+    cmd: python scripts/preprocess_openimages.py --in data/raw/openimages --out data/processed/openimages
+    deps:
+      - scripts/preprocess_openimages.py
+      - data/raw/openimages
+    outs:
+      - data/processed/openimages
+
+  preprocess_rgbd:
+    cmd: python scripts/preprocess_rgbd.py --in data/raw/rgbd_synthetic --out data/processed/rgbd
+    deps:
+      - scripts/preprocess_rgbd.py
+      - data/raw/rgbd_synthetic
+      - params.yaml
+    outs:
+      - data/processed/rgbd
+
+  preprocess_generated_coco:
+    cmd: python scripts/preprocess_generated.py --in data/raw/generated_coco --out data/processed/generated_coco
+    deps:
+      - scripts/preprocess_generated.py
+      - data/raw/generated_coco
+      - params.yaml
+    outs:
+      - data/processed/generated_coco
+
+  # 4. Merge datasets
+  merge_datasets:
+    cmd: python scripts/merge_datasets.py \
+      --sources data/processed/coco data/processed/openimages data/processed/rgbd data/processed/generated_coco \
+      --out data/merged --params params.yaml
+    deps:
+      - scripts/merge_datasets.py
+      - data/processed/coco
+      - data/processed/openimages
+      - data/processed/rgbd
+      - data/processed/generated_coco
+      - params.yaml
+    outs:
+      - data/merged
+
+  # 5. Split into train/val/test
+  split_dataset:
+    cmd: python scripts/split_dataset.py \
+      --in data/merged --out data/splits --train ${splits.train} --val ${splits.val} --test ${splits.test} --seed ${dataset.seed}
+    deps:
+      - scripts/split_dataset.py
+      - data/merged
+      - params.yaml
+    outs:
+      - data/splits
+
+  # 6. Validate splits
+  validate_splits:
+    cmd: python validate_dataset.py
+    deps:
+      - validate_dataset.py
+      - configs/dataset_config.yaml
+      - data/splits
+    outs:
+      - reports/validation_train.json
+      - reports/validation_val.json
+      - reports/validation_test.json
+
+  # 7. Generate stats + gallery
+  stats_and_gallery:
+    cmd: python scripts/generate_stats.py --root data/splits && \
+         python scripts/visualize_overlays.py --root data/splits --out reports/gallery
+    deps:
+      - scripts/generate_stats.py
+      - scripts/visualize_overlays.py
+      - data/splits
+    outs:
+      - reports/stats_train.csv
+      - reports/stats_val.csv
+      - reports/stats_test.csv
+      - reports/gallery
+
+  # 8. Create sample subset
+  create_sample:
+    cmd: python scripts/create_sample.py --in data/splits --out data/samples --size 200 --seed ${dataset.seed}
+    deps:
+      - scripts/create_sample.py
+      - data/splits
+      - params.yaml
+    outs:
+      - data/samples
