@@ -1,0 +1,10 @@
+dataset:
+  path: data/splits/train
+  annotations: annotations.json
+  seed: 42
+  image_size: [640, 640]
+classes:
+  - cup
+  - bottle
+  - bowl
+  - plate
