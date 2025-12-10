@@ -1,5 +1,6 @@
 dataset:
-  seed: 42
+  num: 200       # number of synthetic images
+  seed: 42       # random seed for reproducibility
   classes: ["cup", "bottle", "bowl", "plate"]
   image_size: [640, 640]
 
