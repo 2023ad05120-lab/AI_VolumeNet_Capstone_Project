@@ -9,13 +9,13 @@ stages:
       size: 44
       nfiles: 1
   generate_synthetic_coco:
-    cmd: python scripts/generate_synthetic_dataset_coco.py --out 
-      data/raw/generated_coco --seed 42
+    cmd: python scripts/generate_synthetic_dataset_coco.py --out_dir 
+      data/raw/generated_coco --num 200 --seed 42
     deps:
     - path: params.yaml
       hash: md5
-      md5: 39097cb4cb7f5f5acb1c8b60ff576b6f
-      size: 247
+      md5: 60e6704a20732fd9aaf9d44b1c3d3fca
+      size: 334
     - path: scripts/generate_synthetic_dataset_coco.py
       hash: md5
       md5: 95135eb823e6ea5d8f83cec279758f44
@@ -23,6 +23,19 @@ stages:
     outs:
     - path: data/raw/generated_coco
       hash: md5
-      md5: bb3ffa649f018214be820e136b8860b3.dir
+      md5: 02f4d32cf3dd913f6aaf5c1173f2b19f.dir
       size: 1226378
       nfiles: 403
+  acquire_coco:
+    cmd: python scripts/acquire_coco.py --out data/raw/coco
+    deps:
+    - path: scripts/acquire_coco.py
+      hash: md5
+      md5: 35f9c0eba52be84f44a8824b334f9476
+      size: 1023
+    outs:
+    - path: data/raw/coco
+      hash: md5
+      md5: c1ddca91e1c27cc3c7d2ac0cff71135f.dir
+      size: 38651328194
+      nfiles: 118288
