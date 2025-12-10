@@ -1,12 +1,11 @@
 stages:
-  generate_synthetic_coco:
-    cmd: python scripts/generate_synthetic_dataset_coco.py --out data/raw/generated_coco --seed ${dataset.seed}
+  acquire_coco:
+    cmd: python scripts/acquire_coco.py --out data/raw/coco
     deps:
-      - scripts/generate_synthetic_dataset_coco.py
-      - params.yaml
+      - scripts/acquire_coco.py
     outs:
-      - data/raw/generated_coco
-stages:
+      - data/raw/coco
+
   generate_synthetic_coco:
     cmd: python scripts/generate_synthetic_dataset_coco.py --out_dir data/raw/generated_coco --num ${dataset.num} --seed ${dataset.seed}
     deps:
@@ -14,3 +13,4 @@ stages:
       - params.yaml
     outs:
       - data/raw/generated_coco
+
