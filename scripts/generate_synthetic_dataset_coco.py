@@ -244,18 +244,34 @@ def main(out_dir, num_images, W=640, H=480):
 
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--out_dir", type=str, default="./synthetic_dataset")
-    parser.add_argument("--num", type=int, default=200)
-    args, unknown = parser.parse_known_args()
+    parser.add_argument("--out_dir", type=str, default="./synthetic_dataset",
+                        help="Output directory for dataset")
+    parser.add_argument("--num", type=int, default=200,
+                        help="Number of synthetic images to generate")
+    args = parser.parse_args()
     main(args.out_dir, args.num)
 
 
 # In[4]:
 
 
-from google.colab import files
-files.download('./synthetic_dataset/synthetic_dataset.zip')
+#from google.colab import files
+#files.download('./synthetic_dataset/synthetic_dataset.zip')
 
+if __name__ == "__main__":
+    print(f"Created dataset at: {args.out}/synthetic_dataset.zip")
+    print(f"Images: {num_images}")
+    print(f"Masks: {num_masks}")
+    print(f"Metadata: {output_dir}/metadata.csv")
+    print(f"COCO annotations: {output_dir}/annotations_coco.json")
+
+    # Only run in Colab
+    try:
+        import google.colab
+        from google.colab import files
+        files.download(f"{output_dir}/synthetic_dataset.zip")
+    except ImportError:
+        pass  # Skip download when not in Colab
 
 # In[ ]:
 
