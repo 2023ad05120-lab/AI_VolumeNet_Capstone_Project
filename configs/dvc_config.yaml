@@ -1,0 +1,3 @@
+remote:
+  name: "storage"
+  url: "s3://your-bucket-or-gdrive-remote"

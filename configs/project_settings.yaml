@@ -1,0 +1,10 @@
+project_name: "AIVolumeNet"
+description: "Real-Time AI Framework for Object Size and Volume Estimation Using Monocular Vision"
+phases:
+  - Phase 0: Project setup & infra
+  - Phase 1: Data acquisition & preparation
+  - Phase 2: Model development
+  - Phase 3: Training & evaluation
+  - Phase 4: API & deployment
+  - Phase 5: Feedback loop & continuous learning
+default_experiment_name: "aivolumenet_dev"
