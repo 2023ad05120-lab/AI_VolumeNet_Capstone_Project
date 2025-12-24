@@ -3,8 +3,8 @@ import json
 import cv2
 import matplotlib.pyplot as plt
 
-DATASET_DIR = "data/synthetic"
-ANNOTATIONS_FILE = os.path.join(DATASET_DIR, "annotations.json")
+DATASET_DIR = "./data/processed/coco"
+ANNOTATIONS_FILE = os.path.join(DATASET_DIR, "annotations_coco.json")
 
 def check_structure():
     assert os.path.exists(DATASET_DIR), "Dataset directory missing"
