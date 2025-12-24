@@ -1,0 +1,23 @@
+# Synthetic COCO dataset config for YOLOv8
+path: data/processed/coco  # root dataset folder
+train: images/train        # training images
+val: images/val            # validation images
+names:
+  0: cup
+  1: bottle
+  2: bowl
+  3: plate
+  4: fork
+  5: spoon
+  6: knife
+  7: glass
+  8: bowl
+  9: pan
+nc: 10                     # number of classes
+batch_size: 16            # batch size
+img_size: 640             # image size
+epochs: 50                 # number of epochs
+optimizer: AdamW         # optimizer
+lr0: 0.001                # initial learning rate
+lrf: 0.1                  # final learning rate
+  
