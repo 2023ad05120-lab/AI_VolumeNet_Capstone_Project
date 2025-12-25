@@ -11,7 +11,7 @@ names:
   5: spoon
   6: knife
   7: glass
-  8: bowl
+  8: mug
   9: pan
 nc: 10                     # number of classes
 batch_size: 16            # batch size
