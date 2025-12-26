@@ -1,0 +1,730 @@
+{
+  "images_processed": 40,
+  "images_with_scale": 7,
+  "per_image": {
+    "img_0001": {
+      "image": "runs/detect/predict\\img_0001.jpg",
+      "scale_mm_per_px": 3.2432432432432434,
+      "detections": [
+        {
+          "class": "plate",
+          "bbox_xywh_px": [
+            46,
+            307,
+            33,
+            74
+          ],
+          "conf": null,
+          "volume_ml": 179.93133439201497
+        },
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            47,
+            306,
+            33,
+            74
+          ],
+          "conf": null,
+          "volume_ml": 1799.31334392015
+        }
+      ]
+    },
+    "img_0006": {
+      "image": "runs/detect/predict\\img_0006.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "spoon",
+          "bbox_xywh_px": [
+            122,
+            214,
+            81,
+            25
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0007": {
+      "image": "runs/detect/predict\\img_0007.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "spoon",
+          "bbox_xywh_px": [
+            378,
+            57,
+            224,
+            82
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0008": {
+      "image": "runs/detect/predict\\img_0008.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "spoon",
+          "bbox_xywh_px": [
+            374,
+            304,
+            121,
+            79
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0022": {
+      "image": "runs/detect/predict\\img_0022.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bowl",
+          "bbox_xywh_px": [
+            212,
+            243,
+            105,
+            105
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0023": {
+      "image": "runs/detect/predict\\img_0023.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "cup",
+          "bbox_xywh_px": [
+            320,
+            131,
+            103,
+            22
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0026": {
+      "image": "runs/detect/predict\\img_0026.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            461,
+            200,
+            72,
+            79
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0028": {
+      "image": "runs/detect/predict\\img_0028.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "spoon",
+          "bbox_xywh_px": [
+            249,
+            90,
+            93,
+            47
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0035": {
+      "image": "runs/detect/predict\\img_0035.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "cup",
+          "bbox_xywh_px": [
+            474,
+            310,
+            124,
+            43
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0039": {
+      "image": "runs/detect/predict\\img_0039.jpg",
+      "scale_mm_per_px": 0.9195402298850575,
+      "detections": [
+        {
+          "class": "plate",
+          "bbox_xywh_px": [
+            210,
+            91,
+            128,
+            261
+          ],
+          "conf": null,
+          "volume_ml": 217.61122065864518
+        },
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            209,
+            92,
+            130,
+            261
+          ],
+          "conf": null,
+          "volume_ml": 2244.6469904364644
+        }
+      ]
+    },
+    "img_0040": {
+      "image": "runs/detect/predict\\img_0040.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "fork",
+          "bbox_xywh_px": [
+            353,
+            152,
+            113,
+            222
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0050": {
+      "image": "runs/detect/predict\\img_0050.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "cup",
+          "bbox_xywh_px": [
+            176,
+            230,
+            197,
+            152
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0055": {
+      "image": "runs/detect/predict\\img_0055.jpg",
+      "scale_mm_per_px": 1.0666666666666667,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            221,
+            111,
+            38,
+            224
+          ],
+          "conf": null,
+          "volume_ml": 258.07415704369276
+        },
+        {
+          "class": "plate",
+          "bbox_xywh_px": [
+            220,
+            111,
+            38,
+            225
+          ],
+          "conf": null,
+          "volume_ml": 25.807415704369273
+        }
+      ]
+    },
+    "img_0056": {
+      "image": "runs/detect/predict\\img_0056.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "spoon",
+          "bbox_xywh_px": [
+            174,
+            279,
+            168,
+            98
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0057": {
+      "image": "runs/detect/predict\\img_0057.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            216,
+            126,
+            63,
+            189
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0059": {
+      "image": "runs/detect/predict\\img_0059.jpg",
+      "scale_mm_per_px": 1.5894039735099337,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            472,
+            132,
+            84,
+            150
+          ],
+          "conf": null,
+          "volume_ml": 2799.929124141098
+        },
+        {
+          "class": "plate",
+          "bbox_xywh_px": [
+            471,
+            133,
+            87,
+            151
+          ],
+          "conf": null,
+          "volume_ml": 300.3495399748296
+        }
+      ]
+    },
+    "img_0062": {
+      "image": "runs/detect/predict\\img_0062.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            94,
+            252,
+            61,
+            105
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0070": {
+      "image": "runs/detect/predict\\img_0070.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "fork",
+          "bbox_xywh_px": [
+            417,
+            318,
+            85,
+            100
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0071": {
+      "image": "runs/detect/predict\\img_0071.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "fork",
+          "bbox_xywh_px": [
+            419,
+            234,
+            58,
+            68
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0086": {
+      "image": "runs/detect/predict\\img_0086.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            302,
+            163,
+            46,
+            182
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0087": {
+      "image": "runs/detect/predict\\img_0087.jpg",
+      "scale_mm_per_px": 1.3043478260869565,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            266,
+            194,
+            43,
+            186
+          ],
+          "conf": null,
+          "volume_ml": 494.13273486188797
+        },
+        {
+          "class": "plate",
+          "bbox_xywh_px": [
+            265,
+            196,
+            43,
+            184
+          ],
+          "conf": null,
+          "volume_ml": 49.4132734861888
+        }
+      ]
+    },
+    "img_0107": {
+      "image": "runs/detect/predict\\img_0107.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "fork",
+          "bbox_xywh_px": [
+            499,
+            110,
+            90,
+            255
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0108": {
+      "image": "runs/detect/predict\\img_0108.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bowl",
+          "bbox_xywh_px": [
+            185,
+            123,
+            168,
+            166
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0114": {
+      "image": "runs/detect/predict\\img_0114.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "spoon",
+          "bbox_xywh_px": [
+            158,
+            233,
+            202,
+            134
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0129": {
+      "image": "runs/detect/predict\\img_0129.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bowl",
+          "bbox_xywh_px": [
+            216,
+            266,
+            91,
+            91
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0139": {
+      "image": "runs/detect/predict\\img_0139.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            329,
+            186,
+            83,
+            171
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0143": {
+      "image": "runs/detect/predict\\img_0143.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            395,
+            159,
+            81,
+            158
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0150": {
+      "image": "runs/detect/predict\\img_0150.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "fork",
+          "bbox_xywh_px": [
+            553,
+            96,
+            60,
+            193
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0151": {
+      "image": "runs/detect/predict\\img_0151.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "cup",
+          "bbox_xywh_px": [
+            521,
+            247,
+            73,
+            94
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0154": {
+      "image": "runs/detect/predict\\img_0154.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "spoon",
+          "bbox_xywh_px": [
+            138,
+            126,
+            199,
+            153
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0163": {
+      "image": "runs/detect/predict\\img_0163.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "fork",
+          "bbox_xywh_px": [
+            518,
+            35,
+            95,
+            96
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0166": {
+      "image": "runs/detect/predict\\img_0166.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            299,
+            129,
+            82,
+            144
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0168": {
+      "image": "runs/detect/predict\\img_0168.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            328,
+            128,
+            46,
+            119
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0173": {
+      "image": "runs/detect/predict\\img_0173.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bowl",
+          "bbox_xywh_px": [
+            269,
+            243,
+            61,
+            60
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0181": {
+      "image": "runs/detect/predict\\img_0181.jpg",
+      "scale_mm_per_px": 0.9486166007905138,
+      "detections": [
+        {
+          "class": "plate",
+          "bbox_xywh_px": [
+            42,
+            136,
+            90,
+            253
+          ],
+          "conf": null,
+          "volume_ml": 114.4949513708114
+        },
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            42,
+            132,
+            90,
+            258
+          ],
+          "conf": null,
+          "volume_ml": 1144.9495137081142
+        }
+      ]
+    },
+    "img_0185": {
+      "image": "runs/detect/predict\\img_0185.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "fork",
+          "bbox_xywh_px": [
+            358,
+            95,
+            95,
+            135
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0188": {
+      "image": "runs/detect/predict\\img_0188.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bowl",
+          "bbox_xywh_px": [
+            238,
+            194,
+            35,
+            34
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0189": {
+      "image": "runs/detect/predict\\img_0189.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            424,
+            71,
+            96,
+            84
+          ],
+          "conf": null
+        }
+      ]
+    },
+    "img_0191": {
+      "image": "runs/detect/predict\\img_0191.jpg",
+      "scale_mm_per_px": 2.1238938053097347,
+      "detections": [
+        {
+          "class": "bottle",
+          "bbox_xywh_px": [
+            189,
+            243,
+            53,
+            115
+          ],
+          "conf": null,
+          "volume_ml": 1990.3855619178594
+        },
+        {
+          "class": "plate",
+          "bbox_xywh_px": [
+            189,
+            244,
+            53,
+            113
+          ],
+          "conf": null,
+          "volume_ml": 199.03855619178594
+        }
+      ]
+    },
+    "img_0197": {
+      "image": "runs/detect/predict\\img_0197.jpg",
+      "scale_mm_per_px": null,
+      "detections": [
+        {
+          "class": "cup",
+          "bbox_xywh_px": [
+            31,
+            232,
+            201,
+            83
+          ],
+          "conf": null
+        }
+      ]
+    }
+  }
+}

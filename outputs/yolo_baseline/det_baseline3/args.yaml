@@ -13,7 +13,7 @@ cache: false
 device: null
 workers: 8
 project: outputs/yolo_baseline
-name: det_baseline2
+name: det_baseline3
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -103,4 +103,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: C:\Users\khunz\AI_VolumeNet_Capstone_Project\outputs\yolo_baseline\det_baseline2
+save_dir: C:\Users\khunz\AI_VolumeNet_Capstone_Project\outputs\yolo_baseline\det_baseline3
