@@ -1,0 +1,35 @@
+{
+  "image": "img_0001.jpg",
+  "detections": [
+    {
+      "class": "plate",
+      "bbox_xywh_px": [
+        46,
+        307,
+        33,
+        74
+      ],
+      "conf": null,
+      "depth_stats": {
+        "depth_median": 0.7686274647712708,
+        "depth_iqr": 0.019607841968536377,
+        "valid_ratio": 1.0
+      }
+    },
+    {
+      "class": "bottle",
+      "bbox_xywh_px": [
+        47,
+        306,
+        33,
+        74
+      ],
+      "conf": null,
+      "depth_stats": {
+        "depth_median": 0.7686274647712708,
+        "depth_iqr": 0.019607841968536377,
+        "valid_ratio": 1.0
+      }
+    }
+  ]
+}

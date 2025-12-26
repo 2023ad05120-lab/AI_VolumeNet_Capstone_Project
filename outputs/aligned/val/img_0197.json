@@ -1,0 +1,20 @@
+{
+  "image": "img_0197.jpg",
+  "detections": [
+    {
+      "class": "cup",
+      "bbox_xywh_px": [
+        31,
+        232,
+        201,
+        83
+      ],
+      "conf": null,
+      "depth_stats": {
+        "depth_median": 0.5647059082984924,
+        "depth_iqr": 0.3137255012989044,
+        "valid_ratio": 1.0
+      }
+    }
+  ]
+}

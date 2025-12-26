@@ -24,7 +24,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 midas.to(device)
 
 for fname in os.listdir(IMG_DIR):
-    if not fname.endswith(".jpg"):
+    if not fname.endswith((".jpg", ".png", ".jpeg")):
         continue
     img_path = os.path.join(IMG_DIR, fname)
     img = cv2.imread(img_path)

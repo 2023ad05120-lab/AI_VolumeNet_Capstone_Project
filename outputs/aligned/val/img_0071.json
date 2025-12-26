@@ -1,0 +1,20 @@
+{
+  "image": "img_0071.jpg",
+  "detections": [
+    {
+      "class": "fork",
+      "bbox_xywh_px": [
+        419,
+        234,
+        58,
+        68
+      ],
+      "conf": null,
+      "depth_stats": {
+        "depth_median": 0.5764706134796143,
+        "depth_iqr": 0.10588234663009644,
+        "valid_ratio": 1.0
+      }
+    }
+  ]
+}

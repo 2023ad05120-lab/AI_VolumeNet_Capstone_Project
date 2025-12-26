@@ -6,7 +6,7 @@ from pathlib import Path
 # Paths
 DET_DIR = "runs/detect/predict/labels"
 DEPTH_DIR = "runs/depth/val"
-IMG_DIR = "data/processed/coco/images/val"
+IMG_DIR = "runs/detect/predict"
 OUT_DIR = "outputs/aligned/val"
 os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -58,6 +58,9 @@ def main():
         base = txt_path.stem
         img_path = os.path.join(IMG_DIR, base + ".jpg")
         depth_path = find_depth_file(base)
+
+        print(f"{base}: img={os.path.exists(img_path)}, depth={os.path.exists(depth_path)}")
+
         if not os.path.exists(img_path) or not depth_path:
             print(f"⚠️ Skipping {base}: missing image or depth map")
             continue

@@ -1,0 +1,20 @@
+{
+  "image": "img_0188.jpg",
+  "detections": [
+    {
+      "class": "bowl",
+      "bbox_xywh_px": [
+        238,
+        194,
+        35,
+        34
+      ],
+      "conf": null,
+      "depth_stats": {
+        "depth_median": 0.3607843220233917,
+        "depth_iqr": 0.047058820724487305,
+        "valid_ratio": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "image": "img_0166.jpg",
+  "detections": [
+    {
+      "class": "bottle",
+      "bbox_xywh_px": [
+        299,
+        129,
+        82,
+        144
+      ],
+      "conf": null,
+      "depth_stats": {
+        "depth_median": 0.8705882430076599,
+        "depth_iqr": 0.06666666269302368,
+        "valid_ratio": 1.0
+      }
+    }
+  ]
+}
