@@ -1,0 +1,9 @@
+{
+  "samples_evaluated": 39,
+  "rmse_mean": 103.50994247045273,
+  "mae_mean": 84.09666384183444,
+  "delta1": 0.18026610395394238,
+  "delta2": 0.2579792405256676,
+  "delta3": 0.3516069370209214,
+  "per_sample_csv": "C:\\Users\\khunz\\AI_VolumeNet_Capstone_Project\\AI_VolumeNet_Capstone_Project\\outputs\\evaluation\\per_sample_metrics.csv"
+}

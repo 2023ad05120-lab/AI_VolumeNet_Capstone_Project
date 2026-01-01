@@ -3,8 +3,15 @@ import torch
 import cv2
 import os
 import numpy as np
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("--data", type=str, required=True)
+parser.add_argument("--out", type=str, required=True)
+args = parser.parse_args()
 
-IMG_DIR = "data/processed/coco/images/val"
+IMG_DIR = args.data
+OUT_DIR = args.out
+
 OUT_DIR = "runs/depth/val"
 os.makedirs(OUT_DIR, exist_ok=True)
 

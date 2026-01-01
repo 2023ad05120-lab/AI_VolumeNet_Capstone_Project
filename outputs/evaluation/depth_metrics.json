@@ -1,0 +1,9 @@
+{
+  "samples_evaluated": 10,
+  "rmse_mean": 87.02306365966797,
+  "mae_mean": 70.30695915222168,
+  "delta1": 0.18320922246409094,
+  "delta2": 0.32958955016276803,
+  "delta3": 0.4471769498803472,
+  "per_sample_csv": "outputs\\evaluation\\per_sample_metrics.csv"
+}
