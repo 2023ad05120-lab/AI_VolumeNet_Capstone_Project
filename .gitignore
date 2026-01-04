@@ -1,14 +1,2 @@
 
-__pycache__/
-*.pyc
-.env
-mlruns/
-data/
-.DS_Store
-.vscode/
-.idea/
-*.log
-.pytest_cache/
-synthetic_dataset/
-synthetic_dataset.zip
-.ipynb_checkpoints/
+
